@@ -20,7 +20,7 @@ data_df = pd.DataFrame.from_records(response_json['data']['result'])
 
 # Mengurutkan dan menyimpan ke file CSV
 data_df.sort_values(by=['id'], inplace=True)
-data_df.to_csv('data_desa_jaga.csv', index=False)
+data_df.to_csv('data_desa_jaga.csv')
 
 # Menghitung waktu dan menampilkan hasil
 end_time = perf_counter()
